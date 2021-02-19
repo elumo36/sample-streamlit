@@ -57,7 +57,7 @@ if st.checkbox("Show DataFrame"):
 st.title("顔認識アプリ")
 
 
-SUBSCRIPTION_KEY = "e2746161389d4b508c211e384bf12e03"
+SUBSCRIPTION_KEY = ""
 assert SUBSCRIPTION_KEY
 face_api_url = "https://tori-sample.cognitiveservices.azure.com/face/v1.0/detect"
 
@@ -119,7 +119,13 @@ if uploaded_file is not None:
         st.image(img, caption="uploaded Image.", use_column_width=True)
         # img
 
+# github上にアップロード
 # リポジトリ作成
 # git init
 # git remote add origin https://github.com/elumo36/sample-streamlit.git
 # requirements.txtに標準ライブラリ以外の使用ライブラリを書く。
+# git add .
+# git commit -m "deployなど"
+# git push origin master
+
+# strealitシェアリング
